@@ -1,15 +1,7 @@
 [build]
-command = "npm run build" # Oder leer lassen wenn kein Build nötig
-publish = "dist"          # Dein Output-Ordner
+command = ""  # Leer lassen, da kein Build-Schritt nötig
+publish = "." # Aktuellen Ordner deployen
 
-[build.environment]
-NODE_ENV = "production" # Beschleunigt npm install
-
-[build.caching]
-enabled = true                           # Cache für node_modules
-paths = ["node_modules", "public/build"]
-
-# Automatische Weiterleitung von Ordnerpfaden zu den HTML-Dateien
 [[redirects]]
 from = "/Homepage"
 to = "/Homepage/Homepage.html"
@@ -17,12 +9,12 @@ status = 200
 
 [[redirects]]
 from = "/About_us"
-to = "/about_us/About_us.html"
+to = "/About_us/About_us.html"
 status = 200
 
 [[redirects]]
 from = "/Schematics"
-to = "/schematics/schematics.html"
+to = "/Schematics/schematics.html"
 status = 200
 
 [[redirects]]
@@ -35,7 +27,6 @@ from = "/Sponsorship"
 to = "/Sponsorship/sponsorship.html"
 status = 200
 
-# Startseite festlegen (z. B. Homepage als Landing Page)
 [[redirects]]
 from = "/"
 to = "/Homepage/Homepage.html"
