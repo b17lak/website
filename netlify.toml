@@ -1,6 +1,13 @@
 [build]
-command = "echo 'No build needed'" # Kein Build-Schritt nötig
-publish = "."                      # Deploye den Root-Ordner
+command = "npm run build" # Oder leer lassen wenn kein Build nötig
+publish = "dist"          # Dein Output-Ordner
+
+[build.environment]
+NODE_ENV = "production" # Beschleunigt npm install
+
+[build.caching]
+enabled = true                           # Cache für node_modules
+paths = ["node_modules", "public/build"]
 
 # Automatische Weiterleitung von Ordnerpfaden zu den HTML-Dateien
 [[redirects]]
