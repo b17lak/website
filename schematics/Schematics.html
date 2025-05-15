@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schematics | Octabar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="../Homepage/Homepage.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Octabar_logo.png">
+
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-3 fw-bold" href="../Homepage/Homepage.html">
+                        <span class="logo-text">OCTABAR</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="bi bi-list me-2"></i> MENU
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="../Homepage/Homepage.html">Homepage</a></li>
+                                    <li><a class="dropdown-item" href="../Sponsorship/sponsorship.html">Sponsorship</a></li>
+                                    <li><a class="dropdown-item" href="../schematics/Schematics.html">Schematics</a></li>
+                                    <li><a class="dropdown-item" href="/Octabar/Shop/shop.html">Shop</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold mb-3">Octabar Schematics</h1>
+            <p class="lead">Technical diagrams and component specifications</p>
+        </div>
+
+        <div class="schematic-container">
+            <h2><i class="bi bi-cpu"></i> Elektronik</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card component-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightning-charge component-icon"></i>
+                            <h3>Blockschaltbild</h3>
+                            <!-- Updated button to trigger modal -->
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#powerDiagramModal">
+                                View Diagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card component-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-motherboard component-icon"></i>
+                            <h3>Schaltplan</h3>
+                            <button class="btn btn-outline-primary"data-bs-toggle="modal" data-bs-target="#powerDiagramModal"
+                            >View Diagram
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card component-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-usb-plug component-icon"></i>
+                            <h3>Pumpen Schaltplan</h3>
+                            <button class="btn btn-outline-primary"data-bs-toggle="modal" data-bs-target="#powerDiagramModal">
+                                View Diagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card component-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-usb-plug component-icon"></i>
+                            <h3>Pumpen Platinen</h3>
+                            <button class="btn btn-outline-primary"data-bs-toggle="modal" data-bs-target="#powerDiagramModal">
+                                View Diagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card component-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-usb-plug component-icon"></i>
+                            <h3>Ventil Schaltplan</h3>
+                            <button class="btn btn-outline-primary"data-bs-toggle="modal" data-bs-target="#powerDiagramModal">
+                                View Diagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card component-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-usb-plug component-icon"></i>
+                            <h3>Ventil Platinen</h3>
+                            <button class="btn btn-outline-primary"data-bs-toggle="modal" data-bs-target="#powerDiagramModal">
+                                View Diagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Power System Modal -->
+        <div class="modal fade" id="powerDiagramModal" tabindex="-1" aria-labelledby="powerDiagramLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="powerDiagramLabel">
+                            <i class="bi bi-lightning-charge"></i> Power System Diagram
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254" 
+                             alt="Power System Diagram" 
+                             class="img-fluid diagram-img rounded">
+                        <div class="mt-4">
+                            <h4>12V DC Power Distribution</h4>
+                            <p class="text-muted">This diagram shows the power regulation system for Octabar</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">
+                            <i class="bi bi-download"></i> Download Diagram
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rest of your existing content -->
+        <div class="schematic-container mt-5">
+            <h2><i class="bi bi-pipe"></i> Fluid System</h2>
+            <div class="diagram-container">
+                <img src="../images/fluid_diagram.png" alt="Fluid System Diagram" class="img-fluid">
+                <div class="mt-3">
+                    <h4>Pump Wiring Diagram</h4>
+                    <p>12V peristaltic pumps with flow sensors</p>
+                    <a href="../downloads/fluid_system.pdf" class="btn btn-primary">
+                        <i class="bi bi-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="schematic-container mt-5">
+            <h2><i class="bi bi-file-earmark-code"></i> Source Code</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h3><i class="bi bi-github"></i> Repository</h3>
+                    <p>Access the complete source code on GitHub</p>
+                    <pre><code>git clone https://github.com/yourusername/octabar.git</code></pre>
+                    <a href="https://github.com/yourusername/octabar" class="btn btn-dark">
+                        <i class="bi bi-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-0 text-white">© 2023 Octabar | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+:root {
+    --primary-blue: #1e3c72;
+    --secondary-blue: #2a5298;
+  }
+  
+  /* Header Styles --------------------------------------------------------------------------------------------------------------------------------------------*/
+  header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-collapse {
+    margin-left: auto;
+  }
+  
+  .navbar-brand .logo-text {
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand:hover .logo-text {
+    transform: scale(1.05);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-link.dropdown-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+  
+  .nav-link.dropdown-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border: none;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .dropdown-item {
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f5ff;
+    color: var(--primary-blue);
+    padding-left: 25px;
+  }
+  /* MAIN -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  main p{
+  text-align: center;
+  }
+  
+  /* Popover Styles */
+  .popover-container {
+    position: relative; /* Wichtig für absolute Positionierung des Popovers */
+    height: 200px;
+    overflow: visible; /* Wichtig für sichtbaren Popover */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .popover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ändere zu 'contain' für unbeschnittene Bilder oder 'cover' für beschnittene */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .popover-content {
+    position: absolute;
+    top: calc(100% + 10px); /* 10px unterhalb des Containers */
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  
+  .popover-container:hover .popover-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .popover-content::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  }
+  
+/* Shop-Specific Styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(30, 60, 114, 0.1) !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    border: none;
+    padding: 8px 0;
+    border-radius: 30px;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Testimonials */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* FAQ */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(30, 60, 114, 0.05);
+    color: var(--primary-blue);
+}
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .popover-content {
+        display: none !important;
+    }
+  }

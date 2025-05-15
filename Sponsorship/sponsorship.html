@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Octabar</title>
+    <!-- Reuse the same stylesheets as your homepage -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="sponsorship.css" rel="stylesheet">
+    <link rel="Website icon" type="image/png" href="/Octabar/Octabar_logo.png">
+</head>
+<body>
+    <!-- Reuse the same header -->
+    <header class="sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-3 fw-bold" href="/Octabar/Homepage/Homepage.html"> <!-- Link back to homepage -->
+                        <span class="logo-text">OCTABAR</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="bi bi-list me-2"></i> MENU
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="/Octabar/Homepage/Homepage.html">Homepage</a></li>
+                                    <li><a class="dropdown-item" href="/Octabar/about_us/About_us.html">About us</a></li>
+                                    <li><a class="dropdown-item" href="/Octabar/schematics/Schematics.html">Schematics</a></li>
+                                    <li><a class="dropdown-item" href="/Octabar/Shop/shop.html">Shop</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Content -->
+    <main class="sponsorship-container">
+        <section class="hero-section">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold mb-4">Become an Octabar Sponsor</h1>
+                        <p class="lead mb-5">Join us in revolutionizing the beverage industry with cutting-edge automation technology</p>
+                        <a href="#contact" class="btn btn-primary btn-lg px-4">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Sponsorship Benefits</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="benefit-card">
+                            <i class="bi bi-badge-ad"></i>
+                            <h3>Brand Visibility</h3>
+                            <p>Your logo prominently displayed on all Octabar units and marketing materials</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="benefit-card">
+                            <i class="bi bi-people"></i>
+                            <h3>Networking</h3>
+                            <p>Exclusive access to industry events and potential clients</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="benefit-card">
+                            <i class="bi bi-graph-up"></i>
+                            <h3>Market Growth</h3>
+                            <p>Early access to new markets through our innovative distribution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="current-sponsors py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Current Sponsors</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <img src="https://via.placeholder.com/150x80" alt="Sponsor Logo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-center mb-4">Become a Sponsor</h2>
+                        <div class="contact-form">
+                            <form id="sponsorForm" action="mailto:sponsors@octabar.com" method="post" enctype="text/plain">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="company" class="form-label">Company</label>
+                                        <input type="text" class="form-control" id="company" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Sponsorship Interest</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Send via Outlook</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-0 text-white">© 2025 Octabar | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple form validation
+        document.getElementById('sponsorForm').addEventListener('submit', function(e) {
+            const email = document.getElementById('email').value;
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Please enter a valid email address');
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

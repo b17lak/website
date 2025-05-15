@@ -1,0 +1,35 @@
+[build]
+command = "echo 'No build needed'" # Kein Build-Schritt nötig
+publish = "."                      # Deploye den Root-Ordner
+
+# Automatische Weiterleitung von Ordnerpfaden zu den HTML-Dateien
+[[redirects]]
+from = "/Homepage"
+to = "/Homepage/Homepage.html"
+status = 200
+
+[[redirects]]
+from = "/About_us"
+to = "/about_us/About_us.html"
+status = 200
+
+[[redirects]]
+from = "/Schematics"
+to = "/schematics/schematics.html"
+status = 200
+
+[[redirects]]
+from = "/Shop"
+to = "/Shop/shop.html"
+status = 200
+
+[[redirects]]
+from = "/Sponsorship"
+to = "/Sponsorship/sponsorship.html"
+status = 200
+
+# Startseite festlegen (z. B. Homepage als Landing Page)
+[[redirects]]
+from = "/"
+to = "/Homepage/Homepage.html"
+status = 200
