@@ -1,12 +1,17 @@
 :root {
   --primary-blue: #1e3c72;
   --secondary-blue: #2a5298;
+  --accent-color: #4a90e2;
+  --light-bg: #f8f9fa;
+
 }
 
 /* Header Styles --------------------------------------------------------------------------------------------------------------------------------------------*/
 header {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .navbar {
