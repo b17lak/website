@@ -10,7 +10,7 @@ status = 200
 
 # Spezifische Redirects für Ihre Seiten
 [[redirects]]
-from = "/home"
+from = "/*"
 to = "/Homepage/Homepage.html"
 status = 200
 
