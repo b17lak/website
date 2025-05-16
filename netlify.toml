@@ -1,41 +1,8 @@
 [build]
-command = ""
-publish = "."
-
-# Basis-Redirects für HTML5 PushState (SPA Fallback)
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-
-# Spezifische Redirects für Ihre Seiten
-[[redirects]]
-from = "/*"
-to = "/Homepage/Homepage.html"
-status = 200
+  publish = "."
+  command = ""
 
 [[redirects]]
-from = "/about"
-to = "/about_us/About_us.html"
-status = 200
-
-[[redirects]]
-from = "/sponsors"
-to = "/Sponsorship/sponsorship.html"
-status = 200
-
-[[redirects]]
-from = "/design"
-to = "/schematics/Schematics.html"
-status = 200
-
-[[redirects]]
-from = "/store"
-to = "/Shop/shop.html"
-status = 200
-
-# Asset Caching
-[[headers]]
-for = "/*"
-[headers.values]
-Cache-Control = "public, max-age=3600"
+  from = "/*"
+  to = "/Homepage/Homepage.html"
+  status = 200
