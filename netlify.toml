@@ -1,8 +1,13 @@
 [build]
-  publish = "."
-  command = ""
+publish = "."
+command = ""
 
 [[redirects]]
-  from = "/*"
-  to = "/Homepage/Homepage.html"
-  status = 200
+from = "/*"
+to = "/Homepage/Homepage.html"
+status = 200
+
+[[headers]]
+for = "/*"
+[headers.values]
+Content-Security-Policy = "default-src 'self' https://cdn.jsdelivr.net;"
