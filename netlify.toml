@@ -1,33 +1,41 @@
 [build]
-command = ""  # Leer lassen, da kein Build-Schritt nötig
-publish = "." # Aktuellen Ordner deployen
+command = ""
+publish = "."
 
+# Basis-Redirects für HTML5 PushState (SPA Fallback)
 [[redirects]]
-from = "/Homepage"
+from = "/*"
+to = "/index.html"
+status = 200
+
+# Spezifische Redirects für Ihre Seiten
+[[redirects]]
+from = "/home"
 to = "/Homepage/Homepage.html"
 status = 200
 
 [[redirects]]
-from = "/About_us"
-to = "/About_us/About_us.html"
+from = "/about"
+to = "/about_us/About_us.html"
 status = 200
 
 [[redirects]]
-from = "/Schematics"
-to = "/Schematics/schematics.html"
-status = 200
-
-[[redirects]]
-from = "/Shop"
-to = "/Shop/shop.html"
-status = 200
-
-[[redirects]]
-from = "/Sponsorship"
+from = "/sponsors"
 to = "/Sponsorship/sponsorship.html"
 status = 200
 
 [[redirects]]
-from = "/"
-to = "/Homepage/Homepage.html"
+from = "/design"
+to = "/schematics/Schematics.html"
 status = 200
+
+[[redirects]]
+from = "/store"
+to = "/Shop/shop.html"
+status = 200
+
+# Asset Caching
+[[headers]]
+for = "/*"
+[headers.values]
+Cache-Control = "public, max-age=3600"
