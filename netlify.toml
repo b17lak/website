@@ -1,6 +1,6 @@
 [build]
 command = ""
-publish = "."
+publish = "Octabar"
 
 # Basis-Redirects für HTML5 PushState (SPA Fallback)
 [[redirects]]
