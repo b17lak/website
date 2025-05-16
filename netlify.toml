@@ -1,6 +1,6 @@
 [build]
 command = ""
-publish = "dist"
+publish = "."
 
 # Basis-Redirects für HTML5 PushState (SPA Fallback)
 [[redirects]]
